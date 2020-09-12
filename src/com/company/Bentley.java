@@ -3,12 +3,11 @@ package com.company;
 public class Bentley extends Car {
     public BentleyType model;
 
-
-    public Bentley(BentleyType model, Color color,double volume){
+     Bentley(String  model, Color color,double volume){
         super(volume,color);
-        this.model=model;
-    }
+        this.model= BentleyType.valueOf(model);
 
+    }
 
     public BentleyType getModel(){
         return  model;

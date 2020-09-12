@@ -1,13 +1,16 @@
 package com.company;
 
 public abstract class Car {
-    public double volume;
-    public Color color;
+    private double volume;
+    private Color color;
 
 
     public  Car(double volume,Color  color){
         this.color = color;
         this.volume = volume;
+    }
+    Car(){
+
     }
     public double getVolume() {
         return volume;

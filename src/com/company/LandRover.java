@@ -5,9 +5,9 @@ public class LandRover extends Car{
 
 
 
-    public LandRover(LandRoverType model, Color color, double volume){
+     LandRover(String model, Color color, double volume){
         super(volume,color);
-        this.model=model;
+        this.model= LandRoverType.valueOf(model);
 
     }
     public LandRoverType getModel(){
